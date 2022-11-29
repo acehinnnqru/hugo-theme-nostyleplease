@@ -33,6 +33,7 @@ body {
 article strong:not(:lang(zh)):not(:lang(ja)),
 html :not(:lang(zh)):not(:lang(ja)) {
   font-family: Hack;
+  font-style: italic;
 }
 
 html {
