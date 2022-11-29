@@ -29,7 +29,12 @@ html,
 body {
   background: white;
 }
-
+article blockquote :lang(ja-Latn),
+article blockquote :lang(zh-Latn),
+article blockquote :not(:lang(zh)):not(:lang(ja)),
+article blockquote:lang(ja-Latn),
+article blockquote:lang(zh-Latn),
+article blockquote:not(:lang(zh)):not(:lang(ja)),
 article strong:not(:lang(zh)):not(:lang(ja)),
 html :not(:lang(zh)):not(:lang(ja)) {
   font-family: Hack;
