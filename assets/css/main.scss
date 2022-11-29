@@ -23,6 +23,13 @@ body[a="dark"] {
 @font-face {
   font-family: "Hack";
   src: url("/fonts/hack-italic.woff2") format("woff2");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Hack";
+  src: url("/fonts/hack-bolditalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
 }
 // -------------------------------------------- //
 
@@ -34,8 +41,9 @@ body {
   background: white;
 }
 
+article strong:not(:lang(zh)):not(:lang(ja)),
 html :not(:lang(zh)):not(:lang(ja)) {
-    font-family: Hack;
+  font-family: Hack;
 }
 
 html {
