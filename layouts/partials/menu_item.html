@@ -8,6 +8,21 @@
             {{- end -}}
         </li>
 
+        {{- if $item.viewSections }}
+
+            {{- $sections := (site.GetPage ($item).section) -}}
+
+            <ul>
+            {{- range $eachSection := ($sections).Sections }}
+                <li>
+                    <span>{{- ($eachSection.Date | time.Format site.Params.theme_config.date_format) }}</span>
+                    <a href="{{ $eachSection.Permalink }}">{{ $eachSection.LinkTitle }}</a>
+                </li>
+            {{- end -}}
+            </ul>
+        
+        {{- end -}}
+
         {{- if $item.entries }}
             {{ partial "menu_item.html" (dict "context" . "collection" $item.entries) }}
         {{- end -}}
