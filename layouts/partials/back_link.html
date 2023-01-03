@@ -1,1 +1,1 @@
-<a href="{{ ($.Site.GetPage "section" .Section) | "/" | relURL }}">{{ $.Site.Params.theme_config.back_home_text }}</a>
+<a href="{{ ($.Site.GetPage "section" .Section) | relURL }}">{{ $.Site.Params.theme_config.back_home_text }}</a>
