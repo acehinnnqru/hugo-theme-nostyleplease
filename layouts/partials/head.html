@@ -14,4 +14,6 @@
   := $sass | resources.ToCSS $options }}
   <link rel="stylesheet" href="{{ $style.Permalink | relURL }}" />
   {{ if .Params.mathjax }} {{ partial "mathjax.html" . }} {{ end }}
+
+    {{ partial "analytics.html" . }}
 </head>
